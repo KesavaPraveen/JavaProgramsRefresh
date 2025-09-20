@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LargestElementInArray {
+public class SmallestElementInArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the elements for the array: ");
@@ -11,14 +11,14 @@ public class LargestElementInArray {
             arr[i]=scanner.nextInt();
         }
         System.out.println("Elements in the array: " + Arrays.toString(arr));
-        int maxValue=arr[0];
+        int minValue=arr[0];
         for(int i=1;i<arr.length;i++)
         {
-            if(arr[i] > maxValue)
+            if(arr[i] < minValue)
             {
-                maxValue=arr[i];
+                minValue=arr[i];
             }
         }
-        System.out.println("Largest Element in the array: " +maxValue);
+        System.out.println("Smallest Element in the array: " +minValue);
     }
 }
