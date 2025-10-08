@@ -8,18 +8,14 @@ public class PalindromePrograms {
         /*
        String Palindrome Validation
        */
-        String str="aMadama";
+        String str="lifil";
         str=str.toLowerCase();
-        int left=0,right=str.length()-1;
-        boolean isPalindrome=false;
+        int left=0,right=str.length()-  1;
+        boolean isPalindrome=true;
         while(left<right)
         {
-            if(str.charAt(left)==str.charAt(right))
-            {
-                isPalindrome=true;
-            }
-            else{
-                isPalindrome=false;
+            if(str.charAt(left)!=str.charAt(right)) {
+                isPalindrome = false;
             }
             left++;
             right--;
